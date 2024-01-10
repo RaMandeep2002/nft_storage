@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { NFTStorage, File } from 'nft.storage';
 
 const UploadToNFTStorage = () => {
-  const API_TOKEN =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEZGN0ZhOTg5OTVkM0M1YUFmQ0M5MkJCMDUyNEFmYjhFY2QyM2RjOTIiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTcwMzE2Mzg3NzM2MiwibmFtZSI6InRlc3QifQ.DqMBsgr5ZGDDgP5szlP0BNIWLbgWyrpnG8T2LtTXPnA';
+  const API_TOKEN = 'Enter you api';
   const [nftData, setNFTData] = useState({
     name: '',
     description: '',
@@ -52,7 +51,6 @@ const UploadToNFTStorage = () => {
       <h1 className="text-3xl font-bold mb-4 text-center">
         Upload to NFT.Storage
       </h1>
-
       <div className="mb-4">
         <label
           htmlFor="name"
@@ -70,7 +68,6 @@ const UploadToNFTStorage = () => {
           className="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
         />
       </div>
-
       <div className="mb-4">
         <label
           htmlFor="description"
@@ -87,7 +84,6 @@ const UploadToNFTStorage = () => {
           className="mt-1 p-2 border rounded-md w-full h-32 resize-none focus:outline-none focus:ring focus:border-blue-300"
         ></textarea>
       </div>
-
       <div className="mb-4">
         <label
           htmlFor="image"
@@ -103,7 +99,6 @@ const UploadToNFTStorage = () => {
           className="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
         />
       </div>
-
       <button
         type="button"
         onClick={handleUpload}
@@ -111,7 +106,6 @@ const UploadToNFTStorage = () => {
       >
         Upload NFT
       </button>
-
       <p className="mt-4 mr-4 overflow-auto text-center text-green-600">
         {uploadStatus}
       </p>
